@@ -1,0 +1,19 @@
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> sorted(n);
+        int low = 0, high = nums.size() - 1;
+        for(int i = nums.size() - 1; i > -1; i--){
+            if(abs(nums[low]) > nums[high]){
+                sorted[i] = pow(nums[low], 2);
+                low++;
+            }
+            else{
+                sorted[i] = pow(nums[high], 2);
+                high--;
+            }
+        }
+        return sorted;
+    }
+};
