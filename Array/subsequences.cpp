@@ -1,4 +1,4 @@
-Q. Print all subsequences of a string
+Q. Return all subsequences of a string
 
 
 #include<iostream>
