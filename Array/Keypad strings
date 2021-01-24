@@ -1,4 +1,4 @@
-Q. Print all possible combinations from keypad using the number provided as input.
+Q. Return all possible combinations from keypad using the number provided as input.
 
 
 #include<iostream>
