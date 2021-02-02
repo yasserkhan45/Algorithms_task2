@@ -1,0 +1,15 @@
+https://leetcode.com/explore/learn/card/binary-search/126/template-ii/949/
+
+
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
+        long l = 0, r = nums.size() - 1;
+        while(l < r) {
+            long mid = l + (r - l) / 2;
+            if(nums[mid] > nums[r]) l = mid + 1;
+            else r = mid;
+        }
+        return nums[l];
+    }
+};
